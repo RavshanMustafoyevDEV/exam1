@@ -1,0 +1,162 @@
+// Fonts import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    background: pink;
+    
+}
+
+section{
+    width: 100rem;
+    height: 50rem;
+}
+
+.btn{
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: .4s all;
+    display: flex;
+    align-items: center;
+
+    .icon{
+        transition: .4s all;
+        font-size: 18px;
+        margin: 0 8px;
+
+        
+    }
+
+    &:hover{
+        color: rgba(0, 0, 0, 1);
+
+        .icon.verse{
+            transform: translateX(-5px);
+
+        }
+        .icon.teskari{
+            transform: translateX(5px);
+        }
+    }
+
+
+}
+ul{
+    list-style: none;
+}
+
+
+
+section{
+    display: block;
+    width: 70%;
+    height: 500px;
+    position: relative;
+    margin: 3rem 0;
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 35px;
+    background: #fff;
+
+    nav{
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+
+        .nav-menu ul{
+            display: flex;
+        }
+    }
+
+    .page{
+        display: flex;
+        width: 100%;
+
+        .bg-page img{
+            width: 282px;
+        }
+
+        .text-page{
+            margin: 10px 50px;
+        }
+
+        .header-page{
+            font-family: Lora;
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: 900;
+            margin: 50px 0;
+            display: flex;
+            position: relative;
+
+            .line{
+                position: absolute;
+                top: 75%;
+                left: 45%;
+                width: 80px;
+                height: 5px;
+                background: #000;
+            }
+        }
+
+        .author-page{
+            line-height: 0px;
+            font-family: Lora;
+            color: rgba(0, 0, 0, 0.644);
+
+            span{
+                color: #000;
+            }
+        }
+
+        .video-page{
+            display: flex;
+            font-family: Poppins;
+            margin: 50px 0;
+
+            .vd{
+                position: relative;
+
+                .preview img{
+                    width: 250px;
+                    height: 150px;
+                    border-radius: 3px;
+                }
+
+                .icon-video{
+
+                    
+                    img{
+                        background: #fff;
+                        border-radius: 50%;
+                        opacity: 0.8;
+                        position: absolute;
+                        top: 40%;
+                        left: 40%;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .text-video{
+                margin: 0px 30px;
+            }
+        }
+    }
+}
+
